@@ -1,4 +1,5 @@
 /* font @import */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Meow+Script&family=Space+Mono&display=swap');
 
 :root {
   /* css variables with theme colors,
@@ -11,16 +12,47 @@ body {
     padding: 20px;
 }
 
+body h1 {
+  font-family: 'Meow Script', cursive;
+  font-size:calc(12px + 5vw);
+}
+
+#inputs {
+  width: 100%;
+  max-width: 400px;
+  padding-bottom: 20px;
+}
+
+label, input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  margin-bottom: 3px;
+}
+
+textarea {
+  resize: none;
+  height: 50px;
+}
+
+input, select {
+  height: 30px;
+  font-size: 1rem;
+}
+
 #card {
   width: 500px;
-  height: 400px;
   background: blueviolet;
   padding: 5px;
   text-align: center;
 }
 
 #chosen-image {
-  width: 300px;
-  height: 200px;
+  width: 400px;
   object-fit: cover;
 }
