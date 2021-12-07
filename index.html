@@ -12,10 +12,27 @@
 </head>
 
 <body>
-    <input id="name-input">
+    <h1>Birthday Card Builder</h1>
+    <section id="inputs">
+        <label for="name-input">Name</label>
+        <input id="name-input">
+
+        <label for="photo-select">Photo</label>
+            <select id="photo-select">
+                <option value="assets/turtle.png">Turtle</option>
+                <option value="assets/psychic.png" selected>Psychic</option>
+                <option value="assets/thor.png">Thor</option>
+                <option value="assets/skeleton.png">Skeleton</option>
+                <option value="assets/ninja.png">Ninja</option>
+                <option value="assets/hero.png">Hero</option>
+                <option value="assets/princess.png">Princess</option>
+                <option value="assets/ranger.png">Ranger</option>
+                <option value="assets/devil.png">Devil</option>
+                <option value="assets/flat-top.png">Flat Top</option>
+            </select>
 
     <p id = "card">
-        The name of the band is
+        Happy Birthday
         <span id = "band-name"></span>
     </p>
 
