@@ -1,5 +1,7 @@
 /* font @import */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Meow+Script&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kalam:wght@300&family=Meow+Script&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Space+Mono&display=swap');
 
 :root {
   /* css variables with theme colors,
@@ -13,7 +15,7 @@ body {
 }
 
 body h1 {
-  font-family: 'Meow Script', cursive;
+  font-family: 'Meow Script', cursive, sans-serif;
   font-size:calc(12px + 5vw);
 }
 
@@ -29,9 +31,14 @@ label, input, select, textarea {
   margin-bottom: 10px;
 }
 
+input, select, textarea {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
 label {
-  text-transform: uppercase;
-  font-family: sans-serif;
+  text-transform: lowercase;
+  font-family: 'Kalam', cursive, sans-serif;
+  letter-spacing: 2px;
   margin-bottom: 3px;
 }
 
