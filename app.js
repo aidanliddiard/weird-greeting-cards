@@ -37,9 +37,10 @@ fromInput.addEventListener('input', () => {
 });
 
 //Export
+const card = document.getElementById('card');
 const exportButton = document.getElementById('export-button');
 exportButton.addEventListener('click', async () => {
-  const dataUrl = await domtoimage.toPng(character);
+  const dataUrl = await domtoimage.toPng(card);
   const link = document.createElement('a');
   link.download = nameInput.value + '.png';
   link.href = dataUrl;
