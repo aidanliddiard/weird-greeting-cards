@@ -29,3 +29,10 @@ descriptionMessage.addEventListener('input', () => {
     messageDisplay.textContent = descriptionMessage.value;
 });
 
+// From
+const fromInput = document.getElementById('from-input');
+const fromHeader = document.getElementById('from-header');
+fromInput.addEventListener('input', () => {
+    fromHeader.textContent = fromInput.value;
+});
+
