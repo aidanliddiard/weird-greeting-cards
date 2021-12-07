@@ -18,7 +18,7 @@ birthdayName.textContent = nameInput.value;
 const photoSelect = document.getElementById('photo-select');
 const chosenPhoto = document.getElementById('chosen-image');
 photoSelect.addEventListener('change', () => {
-    // console.log('photo changed', photoSelect.value);
+    console.log('photo changed', photoSelect.value);
     chosenPhoto.src = photoSelect.value;
 });
 
@@ -34,5 +34,15 @@ const fromInput = document.getElementById('from-input');
 const fromHeader = document.getElementById('from-header');
 fromInput.addEventListener('input', () => {
     fromHeader.textContent = fromInput.value;
+});
+
+//Export
+const exportButton = document.getElementById('export-button');
+exportButton.addEventListener('click', async () => {
+  const dataUrl = await domtoimage.toPng(character);
+  const link = document.createElement('a');
+  link.download = nameInput.value + '.png';
+  link.href = dataUrl;
+  link.click();
 });
 
