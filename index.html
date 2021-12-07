@@ -19,23 +19,29 @@
 
         <label for="photo-select">Photo</label>
             <select id="photo-select">
-                <option src = "photos/dog.jpg">Dogs</option>
+                <option src = "photos/dog.jpg" selected>Dogs</option>
                 <option src = "photos/cat.jpg">Cat</option>
+                <option src = "photos/bunny.jpg">Bunny</option>
+                <option src = "photos/guinea-pig.jpg">Guinea Pig</option>
+                <option src = "photos/pineapple.jpg">Pineapple</option>
             </select>
 
         
         <label for="description-message">Enter message here:</label>
-        <textarea id="description-textarea">Pries secrets and hidden fears using advanced telepathic techniques. Can also apply compulsion when the subject has a corresponding fear.</textarea>
+        <textarea id="description-message">Hope you have a great day!</textarea>
 
         <label for="from-input">From:</label>
         <input id="from-input">
 
-    <p id = "card">
+    <article id = "card">
         Happy Birthday
         <span id = "birthday-name"></span>
-        <img id = "photo-select" src = "photos/dog.jpg">
-    </p>
-
+        <img id = "chosen-image" src = "photos/dog.jpg">
+        <p id="message-display">
+            Hope you have a great day!
+        </p>   
+        <span id = "from-input"></span>
+    </article>
 
     <script src="app.js" type="module"></script>
 </body>

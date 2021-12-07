@@ -13,3 +13,19 @@ nameInput.addEventListener('input', () => {
 birthdayName.textContent = nameInput.value;
 })
     //when it changes, update the value of the span
+
+    // Image
+const photoSelect = document.getElementById('photo-select');
+const chosenPhoto = document.getElementById('chosen-image');
+photoSelect.addEventListener('change', () => {
+    // console.log('photo changed', photoSelect.value);
+    chosenPhoto.src = photoSelect.value;
+});
+
+// Message
+const descriptionMessage = document.getElementById('description-message');
+const messageDisplay = document.getElementById('message-display');
+descriptionMessage.addEventListener('input', () => {
+    messageDisplay.textContent = descriptionMessage.value;
+});
+
