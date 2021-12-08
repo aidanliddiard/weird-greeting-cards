@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Comforter&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Shadows+Into+Light&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Comforter&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Shadows+Into+Light&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Comforter&family=Grechen+Fuemen&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Shadows+Into+Light&family=Space+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Comforter&family=Grechen+Fuemen&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Shadows+Into+Light&family=Space+Mono&display=swap');
 :root {
   /* css variables with theme colors,
     names have to start with "--" */
@@ -26,12 +26,13 @@
   --grey: #88797f;
   --off-white: #dad4bd;
   /* pineaple */
-  --
+  --yellow: #e6e276;
+  --blackish: #313732;
 }
 
 body {
   background: var(--background);
-    padding: 20px;
+  padding: 20px;
 }
 
 body h1 {
@@ -108,8 +109,8 @@ input, select {
   font-family: 'Grechen Fuemen', cursive;
 }
 
-..pineapple {
-  background: var(--grey);
-  color: var(--off-white);
-  font-family: 'Comforter', cursive;
+.pineapple {
+  background: var(--yellow);
+  color: var(--blackish);
+  font-family: 'Amatic SC', cursive;
 }
