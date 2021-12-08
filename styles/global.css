@@ -2,11 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Meow+Script&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kalam:wght@300&family=Meow+Script&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Shadows+Into+Light&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Comforter&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Shadows+Into+Light&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Comforter&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Shadows+Into+Light&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Comforter&family=Grechen+Fuemen&family=IBM+Plex+Mono&family=Kalam:wght@300&family=Meow+Script&family=Shadows+Into+Light&family=Space+Mono&display=swap');
 
 :root {
   /* css variables with theme colors,
     names have to start with "--" */
   --background: #f0e6d6;
+
+  /* dog */
+  --light-green: #c5cd9a;
+  --birch: #362E20;
+  
+  /* cat */
+  --orange: #de6306;
+  --light-grey: #c7c1b3;
+  /* bunny */
+  --brown: #523d36;
+  --purple: #a5a0bb;
+  /* guinea pig */
+  --grey: #88797f;
+  --off-white: #dad4bd;
+  /* pineaple */
+  --
 }
 
 body {
@@ -54,7 +74,6 @@ input, select {
 
 #card {
   width: 500px;
-  background: blueviolet;
   padding: 5px;
   text-align: center;
 }
@@ -64,3 +83,33 @@ input, select {
   object-fit: cover;
 }
 
+.dog {
+  background: var(--light-green);
+  color: var(--birch);
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.cat {
+  background: var(--orange);
+  color: var(--light-grey);
+  font-family: 'Comforter', cursive;
+  letter-spacing: 1px;
+}
+
+.bunny {
+  background: var(--purple);
+  color: var(--brown);
+  font-family: 'Architects Daughter', cursive;
+}
+
+.guinea-pig {
+  background: var(--grey);
+  color: var(--off-white);
+  font-family: 'Grechen Fuemen', cursive;
+}
+
+..pineapple {
+  background: var(--grey);
+  color: var(--off-white);
+  font-family: 'Comforter', cursive;
+}
