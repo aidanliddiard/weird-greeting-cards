@@ -9,16 +9,12 @@ nameInput.addEventListener('input', () => {
     // Image
 const photoSelect = document.getElementById('photo-select');
 const chosenPhoto = document.getElementById('chosen-image');
+const card = document.getElementById('card');
 photoSelect.addEventListener('change', () => {
     chosenPhoto.src = photoSelect.value;
-});
-
-// Theme
-const themeSelect = document.getElementById('photo-select');
-const card = document.getElementById('card');
-themeSelect.addEventListener('change', () => {
-  card.classList.value = '';
-  card.classList.add(themeSelect.value);
+    const theme = photoSelect.value.replace('photos/', '').replace('.jpg', '');
+    card.classList.value = '';
+    card.classList.add(theme);
 });
 
 // Message
